@@ -125,6 +125,9 @@
     -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
     -webkit-mask-composite:xor;mask-composite:exclude;opacity:.6;
   }
+  .hero-photo{position:relative;margin:0 auto 20px;width:148px;height:148px}
+  .hero-photo img{width:148px;height:148px;border-radius:16px;object-fit:cover;object-position:center top;display:block;border:1px solid var(--line);position:relative;z-index:1}
+  .hero-photo::after{content:"";position:absolute;inset:-3px;border-radius:19px;padding:3px;background:linear-gradient(135deg,var(--accent),var(--accent-2) 50%,var(--cyan));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;z-index:0;box-shadow:0 0 30px var(--glow)}
   .hc-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;position:relative}
   .hc-head .label{font-family:'JetBrains Mono';font-size:.72rem;color:var(--steel);text-transform:uppercase;letter-spacing:.12em}
   .hc-dots{display:flex;gap:6px}
@@ -285,6 +288,7 @@
       </div>
     </div>
     <div class="hero-card">
+      <div class="hero-photo"><img src="vijay-photo.jpg" alt="Dr. Vijayathithan Mathiyazhagan" /></div>
       <div class="hc-head">
         <span class="label">// impact_metrics</span>
         <span class="hc-dots"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i></span>
@@ -374,7 +378,7 @@
         <div class="tl-card">
           <div class="tl-top">
             <div><div class="tl-role">PhD Researcher — Advanced Machining</div><div class="tl-org">IIT Madras · Chennai (Adviser: Dr. Anil Meena)</div></div>
-            <span class="tl-date">Through Apr 2025</span>
+            <span class="tl-date">Completed Jun 2025</span>
           </div>
           <ul>
             <li>Thesis: <em>Advanced Machining of CFRP — Damage Mechanisms, Tool Wear &amp; Predictive Modelling.</em></li>
@@ -430,7 +434,7 @@
       <div class="edu-card reveal">
         <div class="deg">Ph.D., Mechanical Engineering</div>
         <div class="inst">IIT Madras, Chennai</div>
-        <div class="yr">2025 · Advanced Manufacturing Technology</div>
+        <div class="yr">Completed Jun 2025 · Advanced Manufacturing Technology</div>
         <div class="cgpa">CGPA <b>8.25 / 10</b> · Thesis on CFRP machining, tool wear &amp; predictive modelling</div>
       </div>
       <div class="edu-card reveal">
